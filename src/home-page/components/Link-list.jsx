@@ -5,7 +5,7 @@ import pictogramsImage from '../images/pictograms.png';
 export function LinkList() {
   return (
     <nav className="home__navigation">
-      <div className="navigation__wrapper">
+      <div className="home__navigation__wrapper">
         <HomeNavigationLink img={ communicatorImage } text="Коммуникатор" />
         <HomeNavigationLink img={ pictogramsImage } text="Карточки" />
       </div>
