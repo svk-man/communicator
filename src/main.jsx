@@ -8,3 +8,11 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
+
+function Welcome() {
+  return (
+    <div>
+      Hello, world!
+    </div>
+  )
+}
