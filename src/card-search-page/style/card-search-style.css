@@ -95,7 +95,7 @@ body {
 
 .cards {
   width: 100%;
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   margin: 25px 0;
 }
 .cards__list {
