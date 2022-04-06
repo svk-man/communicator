@@ -1,4 +1,4 @@
-function OtherPageLink(props) {
+function HeaderLink(props) {
   const { text } = props;
 
   return (
@@ -8,4 +8,4 @@ function OtherPageLink(props) {
   )
 }
 
-export default OtherPageLink
+export default HeaderLink

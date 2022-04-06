@@ -1,4 +1,4 @@
-import '../styles/header.css';
+import '../assets/styles/header.css';
 
 function Header(props) {
   const { content } = props;

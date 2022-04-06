@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import Header from "../../commons/components/Header";
-import Footer from "../../commons/components/footer";
-import HeaderContent from "./Header";
-import CardSearchForm from "./Search-form";
-import FoundCardList from "./Card-list";
-import "../style/card-search-style.css";
-import API from "../apis";
-import { request } from "../../commons/request";
+import Header from "../../../commons/components/Header";
+import Footer from "../../../commons/components/Footer";
+import HeaderContent from "./HeaderContent";
+import CardSearchForm from "./CardSearchForm";
+import FoundCardList from "./FoundCardList";
+import "../assets/style/card-search-style.css";
+import { requestCardData } from "../../../commons/network";
 
 function CardSearchPage() {
   const [searchText, setSearchText] = useState( '' );
@@ -25,11 +24,9 @@ function CardSearchPage() {
   }
 
   useEffect(() => {
-    request(`${ API.PICTOGRAMS_LIST_KEY }${ submittedValue }`)
+    requestCardData( submittedValue )
       .then(data => {
-        if (Array.isArray(data)) {
-          setCardList(data);
-        }
+        setCardList(data);
       })
   }, [submittedValue])
 

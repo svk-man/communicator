@@ -15,7 +15,13 @@
 .card__sound {
   z-index: 2;
   position: absolute;
-  max-width: 20px;
+  background-color: transparent;
+  background-image: url(../images/sound-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 20px;
+  min-height: 20px;
   top: 2px;
   left: 2px;
   cursor: pointer;
