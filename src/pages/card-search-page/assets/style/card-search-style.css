@@ -6,13 +6,11 @@
   word-wrap: break-word;
 }
 
-/* Убираем внутренние отступы */
-ul[class], ol[class] {
+ul, ol {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
-body, h1, h2, h3, h4, p, ul[class], ol[class],
+body, h1, h2, h3, h4, p, ul, ol,
 li, figure, figcaption, blockquote, dl, dd {
   margin: 0;
 }
@@ -27,8 +25,8 @@ body {
 }
 
 @font-face {
-  font-family: Balsamiq-Regular;
-  src: url(../../../../fonts/balsamiq/BalsamiqSans-Regular.ttf);
+  font-family: "Balsamiq-Regular";
+  src: url("../../../../fonts/balsamiq/BalsamiqSans-Regular.ttf");
 }
 
 .wrapper {
@@ -39,10 +37,11 @@ body {
 
 .header__content {
   padding: 20px 0;
-  font-family: Balsamiq-Regular;
+  font-family: "Balsamiq-Regular";
   color: #2B78E4;
   font-size: 18px;
 }
+
 .header__navigation {
   height: 100%;
   display: flex;
@@ -50,17 +49,20 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .header__icon {
   max-width: 35px;
   height: auto;
   margin-right: 50px;
 }
+
 .header__link {
   margin: 0 5px;
   color: #FFFFFF;
   cursor: pointer;
   transition: 0.3s;
 }
+
 .header__link:hover {
   color: #2B78E4;
   transition: 0.3s;
@@ -73,12 +75,14 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 .form__search__input {
   width: 50%;
   height: 20px;
   padding: 0 5px 0 20px;
   border: 3px solid #000000;
 }
+
 .form__search__submit {
   position: absolute;
   width: auto;
@@ -98,6 +102,7 @@ body {
   min-height: calc(100vh - 200px);
   margin: 25px 0;
 }
+
 .cards__list {
   display: flex;
   flex-direction: row;

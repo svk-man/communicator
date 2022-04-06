@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import Header from "../../../commons/components/Header";
-import Footer from "../../../commons/components/Footer";
-import HeaderContent from "./HeaderContent";
-import CardSearchForm from "./CardSearchForm";
-import FoundCardList from "./FoundCardList";
-import "../assets/style/card-search-style.css";
-import { requestCardData } from "../../../commons/network";
+import { useEffect, useState } from 'react';
+import Header from '../../../commons/components/Header';
+import Footer from '../../../commons/components/Footer';
+import HeaderContent from './HeaderContent';
+import CardSearchForm from './CardSearchForm';
+import FoundCardList from './FoundCardList';
+import '../assets/style/card-search-style.css';
+import { requestCardData } from '../../../commons/network';
 
 function CardSearchPage() {
   const [searchText, setSearchText] = useState( '' );
@@ -28,7 +28,7 @@ function CardSearchPage() {
       .then(data => {
         setCardList(data);
       })
-  }, [submittedValue])
+  }, [submittedValue]);
 
   return (
     <>
@@ -40,4 +40,4 @@ function CardSearchPage() {
   )
 }
 
-export { CardSearchPage }
+export { CardSearchPage };

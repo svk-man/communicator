@@ -1,7 +1,7 @@
 const API = {
-  PICTOGRAMS_LIST_KEY: 'https://api.arasaac.org/api/pictograms/ru/search/',
-  IMAGE_KEY: 'https://api.arasaac.org/api/pictograms/',
-  IMAGE_KEY_PARAMETERS: '?download=false'
+  PICTOGRAMS_LIST_URL: 'https://api.arasaac.org/api/pictograms/ru/search/',
+  IMAGE_URL: 'https://api.arasaac.org/api/pictograms/',
+  IMAGE_URL_PARAMETERS: '?download=false',
 }
 
 async function request(url) {
@@ -9,15 +9,15 @@ async function request(url) {
     const response = await fetch(new URL(url));
     const json = await response.json();
 
-    return json
+    return json;
   } catch(error) {
-    throw new Error('Failed to connect').message
+    throw new Error('Failed to connect').message;
   }
 };
 
 async function requestCardData(searchText) {
   try {
-    const data = await request(`${ API.PICTOGRAMS_LIST_KEY }${ searchText }`);
+    const data = await request(`${ API.PICTOGRAMS_LIST_URL }${ searchText }`);
     const isNotValidRequest = !Array.isArray(data);
 
     if (isNotValidRequest) return [];
@@ -26,14 +26,14 @@ async function requestCardData(searchText) {
       return {
         id: cardItem?._id,
         name: cardItem?.keywords[0].keyword,
-        image: `${ API.IMAGE_KEY }${ cardItem?._id }${ API.IMAGE_KEY_PARAMETERS }`,
+        image: `${ API.IMAGE_URL }${ cardItem?._id }${ API.IMAGE_URL_PARAMETERS }`,
       }
     });
 
-    return convertedData
+    return convertedData;
   } catch(error) {
-    throw error.message
+    throw error.message;
   }
 }
 
-export { API, request, requestCardData }
+export { API, request, requestCardData };

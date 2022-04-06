@@ -9,4 +9,4 @@ function CardSearchForm(props) {
   )
 }
 
-export default CardSearchForm
+export default CardSearchForm;

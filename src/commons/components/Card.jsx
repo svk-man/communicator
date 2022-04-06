@@ -7,7 +7,7 @@ function Card(props) {
     <div className="card">
       <div className="card__interaction">
         <button className="card__sound" />
-        <img className="card__image" src={ image } alt="" />
+        <img className="card__image" src={ image } alt="name" />
       </div>
       <h4 className="card__name">
         { name }
@@ -16,4 +16,4 @@ function Card(props) {
   )
 }
 
-export default Card
+export default Card;

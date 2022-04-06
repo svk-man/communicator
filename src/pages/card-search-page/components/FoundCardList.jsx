@@ -1,4 +1,4 @@
-import Card from "../../../commons/components/Card";
+import Card from '../../../commons/components/Card';
 
 function FoundCardList(props) {
   const { cardList } = props;
@@ -15,7 +15,7 @@ function FoundCardList(props) {
         }
       </div>
     </section>
-  )
+  );
 }
 
-export default FoundCardList
+export default FoundCardList;
