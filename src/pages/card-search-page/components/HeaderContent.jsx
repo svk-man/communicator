@@ -19,4 +19,4 @@ function HeaderContent() {
   )
 }
 
-export default <HeaderContent />
+export default <HeaderContent />;

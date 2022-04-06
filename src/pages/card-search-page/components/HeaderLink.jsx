@@ -8,4 +8,4 @@ function HeaderLink(props) {
   )
 }
 
-export default HeaderLink
+export default HeaderLink;
