@@ -1,10 +1,12 @@
-import { LinkList } from "./Link-list";
-import '../style/home-style.css';
+import HomeNavigationList from './HomeNavigationList';
+import '../assets/style/home-style.css';
 
-export function Home() {
+function Home() {
   return (
     <section className="home">
-      <LinkList />
+      <HomeNavigationList />
     </section>
   )
 }
+
+export default Home;
