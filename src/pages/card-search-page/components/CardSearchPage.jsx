@@ -40,4 +40,4 @@ function CardSearchPage() {
   )
 }
 
-export { CardSearchPage };
+export default CardSearchPage;
