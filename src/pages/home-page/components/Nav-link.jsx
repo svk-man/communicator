@@ -3,7 +3,7 @@ export function HomeNavigationLink(props) {
 
   return (
     <a className="link">
-      <img className="link__image" src={ img } alt="" />
+      <img className="link__image" src={ img } alt={ text } />
       <h2 className='link__text'>
         { text }
       </h2>
