@@ -7,7 +7,7 @@ function Card(props) {
     <div className="card">
       <div className="card__interaction">
         <button className="card__sound" />
-        <img className="card__image" src={ image } alt="name" />
+        <img className="card__image" src={ image } alt={ name } />
       </div>
       <h4 className="card__name">
         { name }
