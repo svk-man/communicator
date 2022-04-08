@@ -40,4 +40,8 @@ function CardSearchPage() {
   )
 }
 
+<<<<<<< HEAD
 export default CardSearchPage;
+=======
+export { CardSearchPage };
+>>>>>>> main
