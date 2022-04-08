@@ -26,7 +26,7 @@ body {
 
 @font-face {
   font-family: "Balsamiq-Regular";
-  src: url("../../../../fonts/balsamiq/BalsamiqSans-Regular.ttf");
+  src: url("../../../../commons/assets/fonts/balsamiq/BalsamiqSans-Regular.ttf");
 }
 
 .wrapper {
