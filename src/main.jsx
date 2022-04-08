@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Home } from './home-page/components/Home';
-import { CardSearchPage } from './pages/card-search-page/components/CardSearchPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/components/Home';
+import CardSearchPage from './pages/card-search-page/components/CardSearchPage';
+import UndefinedPage from './pages/undefined/components/UndefinedPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Home /> } />
+        <Route path='cards' element={ <CardSearchPage /> } />
+        <Route path='*' element={ <UndefinedPage /> } />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
-)
+);
