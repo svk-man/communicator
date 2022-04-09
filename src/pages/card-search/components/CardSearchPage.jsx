@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from '../../../commons/components/Header';
 import Footer from '../../../commons/components/Footer';
-import HeaderContent from './HeaderContent';
 import CardSearchForm from './CardSearchForm';
 import FoundCardList from './FoundCardList';
 import '../assets/style/card-search-style.css';
@@ -32,7 +31,7 @@ function CardSearchPage() {
 
   return (
     <>
-      <Header content={ HeaderContent } />
+      <Header />
       <CardSearchForm searchValue={ searchText } onSearchChange={ onSearchChange } onFormSubmit={ onFormSubmit } />
       <FoundCardList cardList={ cardList } />
       <Footer />

@@ -1,11 +1,13 @@
+import { Outlet } from 'react-router-dom';
 import '../assets/styles/header.css';
+import HeaderContent from './HeaderContent';
 
 function Header(props) {
   const { content } = props;
 
   return (
     <header className='header'>
-      { content }
+      { content || <HeaderContent /> }
     </header>
   )
 }
